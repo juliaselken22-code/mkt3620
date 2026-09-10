@@ -418,3 +418,35 @@ footer a:hover {
         height: 200px;
     }
 }
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+#navigation {
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 14px 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+    background-color: #f7dce5;
+    color: #222;
+}
