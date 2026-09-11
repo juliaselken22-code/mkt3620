@@ -1,7 +1,3 @@
-/* =========================================
-   RESET / GLOBAL
-========================================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,12 +15,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   MAIN WEBSITE WRAPPER
-   10% pink background on each side
-========================================= */
-
 .site-wrapper {
     width: 80%;
     margin: 0 auto;
@@ -34,134 +24,64 @@ body {
     border-right: 1px solid #ddd;
 }
 
-
-/* =========================================
-   TOP GRAPHIC / HEADER AREA
-========================================= */
-
 .top-banner {
-    width: 100%;
-    min-height: 100px;
-    padding: 25px 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     text-align: center;
-    background-color: #fff;
+    padding: 30px 20px;
+    background-color: white;
     border-bottom: 1px solid #ddd;
 }
 
-.top-banner img {
-    max-width: 100%;
-    height: auto;
+.top-banner h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
 }
 
-
-/* =========================================
-   PRIMARY NAVIGATION
-========================================= */
-
-.primary-nav {
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.top-banner p {
+    font-size: 16px;
 }
 
-.primary-nav ul {
-    list-style: none;
+#navigation {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
 
+.main-nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    gap: 35px;
-
+    gap: 30px;
     padding: 14px 20px;
 }
 
-.primary-nav a {
+.main-nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
+    color: #222;
     font-weight: 600;
-
+    padding: 8px 12px;
+    border-radius: 6px;
     transition: 0.2s ease;
 }
 
-.primary-nav a:hover,
-.primary-nav a.active {
-    color: #cf7694;
+.main-nav a:hover {
+    background-color: #f7dce5;
+    color: #222;
 }
-
-
-/* =========================================
-   SECONDARY NAVIGATION
-========================================= */
-
-.secondary-nav {
-    width: 100%;
-    background-color: #fafafa;
-    border-bottom: 1px solid #ddd;
-}
-
-.secondary-nav ul {
-    list-style: none;
-
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    padding: 8px 20px;
-}
-
-.secondary-nav a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-}
-
-.secondary-nav a:hover {
-    color: #cf7694;
-}
-
-
-/* =========================================
-   MAIN THREE-COLUMN PAGE LAYOUT
-========================================= */
 
 .content-grid {
     display: grid;
-
     grid-template-columns:
         minmax(150px, 20%)
         minmax(0, 1fr)
         minmax(180px, 22%);
-
     min-height: 600px;
 }
 
-
-/* =========================================
-   LEFT SIDEBAR
-========================================= */
-
 .left-sidebar {
-    padding: 35px 25px;
-
+    padding: 30px 20px;
     border-right: 1px solid #ddd;
-
-    background-color: #fff;
 }
 
 .left-sidebar h3 {
-    margin-bottom: 18px;
-    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .left-sidebar ul {
@@ -169,23 +89,17 @@ body {
 }
 
 .left-sidebar li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .left-sidebar a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
 }
 
 .left-sidebar a:hover {
     color: #cf7694;
 }
-
-
-/* =========================================
-   MAIN CONTENT
-========================================= */
 
 .main-content {
     padding: 30px 35px;
@@ -206,108 +120,42 @@ body {
     margin-bottom: 16px;
 }
 
-
-/* =========================================
-   HERO IMAGE
-========================================= */
-
-.hero {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.hero img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    border-radius: 6px;
-}
-
-.hero-placeholder {
-    width: 100%;
-    min-height: 250px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-/* =========================================
-   RIGHT SIDEBAR / STICKY CONTENT
-========================================= */
-
 .right-sidebar {
-    padding: 35px 25px;
-
+    padding: 30px 20px;
     border-left: 1px solid #ddd;
-
-    background-color: #fff;
 }
 
 .sticky-content {
     position: sticky;
-    top: 90px;
+    top: 20px;
 }
-
-.right-sidebar h3 {
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.right-sidebar ul {
-    padding-left: 20px;
-}
-
-.right-sidebar li {
-    margin-bottom: 8px;
-}
-
-
-/* =========================================
-   INFO / CARD STYLE
-========================================= */
 
 .card {
     background-color: #fafafa;
-
     border: 1px solid #ddd;
     border-radius: 8px;
-
     padding: 20px;
     margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
     margin-bottom: 10px;
+    color: #cf7694;
 }
-
-
-/* =========================================
-   BUTTONS
-========================================= */
 
 .button {
     display: inline-block;
-
     background-color: #cf7694;
     color: white;
-
     padding: 10px 20px;
-
     border-radius: 6px;
-    border: none;
-
     text-decoration: none;
-    cursor: pointer;
-
     transition: 0.2s ease;
 }
 
@@ -316,39 +164,38 @@ body {
     transform: translateY(-2px);
 }
 
+.hero-placeholder {
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
-/* =========================================
-   FOOTER
-========================================= */
+.google-form {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.google-form iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 750px;
+    border: none;
+}
 
 footer {
-    width: 100%;
-
-    padding: 20px 30px;
-
-    border-top: 1px solid #ccc;
-
-    background-color: #fff;
-
     text-align: center;
-
-    font-size: 14px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
     color: #666;
 }
-
-footer a {
-    color: #cf7694;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================================
-   TABLET RESPONSIVE
-========================================= */
 
 @media (max-width: 1000px) {
 
@@ -362,7 +209,6 @@ footer a:hover {
 
     .right-sidebar {
         grid-column: 1 / -1;
-
         border-left: none;
         border-top: 1px solid #ddd;
     }
@@ -372,16 +218,7 @@ footer a:hover {
     }
 }
 
-
-/* =========================================
-   MOBILE RESPONSIVE
-========================================= */
-
 @media (max-width: 700px) {
-
-    body {
-        background-color: #f8dce6;
-    }
 
     .site-wrapper {
         width: 96%;
@@ -391,19 +228,15 @@ footer a:hover {
         display: block;
     }
 
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     .left-sidebar,
     .right-sidebar {
         border: none;
         border-bottom: 1px solid #ddd;
-    }
-
-    .primary-nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .secondary-nav ul {
-        flex-wrap: wrap;
     }
 
     .main-content {
@@ -413,64 +246,4 @@ footer a:hover {
     .main-content h1 {
         font-size: 30px;
     }
-
-    .hero img {
-        height: 200px;
-    }
-}
-/* =========================
-   TOP NAVIGATION
-========================= */
-
-#navigation {
-    background-color: white;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    padding: 14px 20px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.2s ease;
-}
-
-.main-nav a:hover {
-    background-color: #f7dce5;
-    color: #222;
-}
-/* =========================================
-   PORTFOLIO PAGE
-========================================= */
-
-.card {
-    transition: 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.card h3 {
-    color: #cf7694;
-}
-
-.main-content section {
-    scroll-margin-top: 80px;
-}
-
-.main-content strong {
-    color: #333;
 }
