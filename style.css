@@ -450,3 +450,27 @@ footer a:hover {
     background-color: #f7dce5;
     color: #222;
 }
+/* =========================================
+   PORTFOLIO PAGE
+========================================= */
+
+.card {
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #cf7694;
+}
+
+.main-content section {
+    scroll-margin-top: 80px;
+}
+
+.main-content strong {
+    color: #333;
+}
