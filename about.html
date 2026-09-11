@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>About Me | Julia Selken</title>
+    <title>About Me | Julia</title>
 
-    <!-- Connects to your existing CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 
@@ -28,17 +27,21 @@
     <header class="top-banner">
 
         <div>
+
             <h1>My Website</h1>
-            <p>Marketing • HR • Portfolio</p>
+
+            <p>
+                Marketing • HR • Portfolio
+            </p>
+
         </div>
 
     </header>
 
 
     <!-- =========================
-         SHARED NAVIGATION
-         Your JS automatically puts
-         the navigation here
+         TOP NAVIGATION
+         Comes from navigation.js
     ========================== -->
 
     <div id="navigation"></div>
@@ -51,9 +54,9 @@
     <div class="content-grid">
 
 
-        <!-- =====================
+        <!-- =========================
              LEFT SIDEBAR
-        ====================== -->
+        ========================== -->
 
         <aside class="left-sidebar">
 
@@ -66,11 +69,11 @@
                 </li>
 
                 <li>
-                    <a href="projects.html">Projects</a>
+                    <a href="product.html">Product</a>
                 </li>
 
                 <li>
-                    <a href="experience.html">Experience</a>
+                    <a href="portfolio.html">Portfolio</a>
                 </li>
 
                 <li>
@@ -82,133 +85,90 @@
         </aside>
 
 
-
-        <!-- =====================
-             MAIN ABOUT CONTENT
-        ====================== -->
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
 
         <main class="main-content">
 
 
             <!-- ABOUT ME HERO -->
 
-            <section class="hero">
-
-                <!--
-                Later, you can replace this placeholder
-                with a picture of yourself.
-                -->
+            <div class="hero">
 
                 <div class="hero-placeholder">
                     About Me
                 </div>
 
-            </section>
+            </div>
 
 
+            <!-- ABOUT ME TEXT -->
 
-            <!-- INTRODUCTION -->
+            <h1>Hi, I'm Julia!</h1>
 
-            <section>
+            <p>
+                Welcome to my website! I am a student at Iowa State University
+                studying Marketing and Human Resource Management. I am interested
+                in learning more about marketing, business, communication, and
+                working with people.
+            </p>
 
-                <h1>Hi, I'm Julia!</h1>
-
-                <p>
-                    Welcome to my website! I am a student at Iowa State
-                    University studying Marketing and Human Resource
-                    Management. I am interested in learning more about
-                    marketing, business, communication, and working with
-                    people.
-                </p>
-
-                <p>
-                    I created this website to share more about myself,
-                    my experiences, and some of the projects I have
-                    worked on throughout college.
-                </p>
-
-            </section>
-
+            <p>
+                I created this website to share more about myself, my experiences,
+                and some of the projects I have worked on throughout college.
+            </p>
 
 
             <!-- EDUCATION -->
 
-            <section>
+            <h2>Education</h2>
 
-                <h2>Education</h2>
+            <div class="card">
 
-                <div class="card">
+                <h3>Iowa State University</h3>
 
-                    <h3>Iowa State University</h3>
+                <p>
+                    <strong>Major:</strong> Marketing & Human Resource Management
+                </p>
 
-                    <p>
-                        Ivy College of Business
-                    </p>
+                <p>
+                    <strong>Expected Graduation:</strong> December 2028
+                </p>
 
-                    <p>
-                        Marketing & Human Resource Management
-                    </p>
-
-                    <p>
-                        Expected Graduation: December 2028
-                    </p>
-
-                </div>
-
-            </section>
-
+            </div>
 
 
             <!-- INTERESTS -->
 
-            <section>
+            <h2>My Interests</h2>
 
-                <h2>My Interests</h2>
-
-                <p>
-                    I am especially interested in marketing, branding,
-                    social media, human resources, and learning how
-                    companies connect with both their customers and
-                    employees.
-                </p>
-
-                <p>
-                    I enjoy being creative, working with others, and
-                    taking on new opportunities that allow me to learn
-                    new skills. I am open to exploring different areas
-                    of marketing and HR as I continue building my
-                    professional experience.
-                </p>
-
-            </section>
-
+            <p>
+                I am especially interested in marketing, human resources,
+                branding, social media, communication, and learning how
+                businesses connect with both customers and employees.
+            </p>
 
 
             <!-- GOALS -->
 
-            <section>
+            <h2>My Goals</h2>
 
-                <h2>My Goals</h2>
-
-                <p>
-                    One of my goals is to gain hands-on experience
-                    through internships where I can apply what I am
-                    learning in school to real business situations.
-                    I am excited to continue learning about different
-                    areas of marketing and human resources and discover
-                    where my interests take me.
-                </p>
-
-            </section>
+            <p>
+                My goal is to continue gaining hands-on experience in marketing
+                and human resources while developing skills that I can use in
+                my future career. I am excited to explore different areas of
+                business and learn more through internships and professional
+                experiences.
+            </p>
 
 
         </main>
 
 
-
-        <!-- =====================
+        <!-- =========================
              RIGHT SIDEBAR
-        ====================== -->
+        ========================== -->
 
         <aside class="right-sidebar">
 
@@ -217,42 +177,45 @@
                 <h3>Quick Info</h3>
 
 
+                <!-- EDUCATION CARD -->
+
                 <div class="card">
 
                     <h3>Education</h3>
 
                     <p>
-                        Iowa State University
-                    </p>
-
-                    <p>
+                        Iowa State University<br>
                         Marketing + HR
                     </p>
 
                 </div>
 
 
+                <!-- INTERESTS CARD -->
+
                 <div class="card">
 
                     <h3>Interests</h3>
 
-                    <p>Marketing</p>
-                    <p>Human Resources</p>
-                    <p>Branding</p>
-                    <p>Social Media</p>
+                    <p>
+                        Marketing<br>
+                        Human Resources<br>
+                        Branding<br>
+                        Social Media
+                    </p>
 
                 </div>
 
+
+                <!-- CONTACT CARD -->
 
                 <div class="card">
 
                     <h3>Connect</h3>
 
-                    <p>
-                        <a href="contact.html">
-                            Contact Me
-                        </a>
-                    </p>
+                    <a href="contact.html">
+                        Contact Me
+                    </a>
 
                 </div>
 
@@ -264,7 +227,6 @@
     </div>
 
 
-
     <!-- =========================
          FOOTER
     ========================== -->
@@ -272,8 +234,7 @@
     <footer>
 
         <p>
-            © 2026 Julia Selken |
-            <a href="contact.html">Contact</a>
+            © 2026 Julia Selken
         </p>
 
     </footer>
@@ -282,7 +243,10 @@
 </div>
 
 
-<!-- Connects to your existing navigation.js -->
+<!-- =========================
+     NAVIGATION JAVASCRIPT
+========================= -->
+
 <script src="navigation.js"></script>
 
 
