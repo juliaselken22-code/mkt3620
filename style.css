@@ -1,3 +1,7 @@
+/* =========================================
+   RESET / GLOBAL STYLES
+========================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,19 +19,42 @@ body {
     line-height: 1.6;
 }
 
+
+/* =========================================
+   MAIN WEBSITE WRAPPER
+   Leaves pink background on both sides
+========================================= */
+
 .site-wrapper {
     width: 80%;
     margin: 0 auto;
     min-height: 100vh;
-    background-color: white;
+
+    background-color: #ffffff;
+
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
 
+
+/* =========================================
+   TOP HEADER
+========================================= */
+
 .top-banner {
+    width: 100%;
+    min-height: 130px;
+
+    padding: 30px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    padding: 30px 20px;
-    background-color: white;
+
+    background-color: #ffffff;
+
     border-bottom: 1px solid #ddd;
 }
 
@@ -38,50 +65,95 @@ body {
 
 .top-banner p {
     font-size: 16px;
+    color: #333;
 }
 
+
+/* =========================================
+   TOP NAVIGATION
+========================================= */
+
 #navigation {
-    background-color: white;
+    width: 100%;
+
+    background-color: #ffffff;
+
     border-bottom: 1px solid #ddd;
 }
 
+
+/* Navigation container */
+
 .main-nav {
     display: flex;
+
     justify-content: center;
+    align-items: center;
+
     gap: 30px;
+
     padding: 14px 20px;
 }
 
+
+/* Navigation links */
+
 .main-nav a {
     text-decoration: none;
+
     color: #222;
+
+    font-size: 16px;
     font-weight: 600;
+
     padding: 8px 12px;
+
     border-radius: 6px;
+
     transition: 0.2s ease;
 }
+
+
+/* Navigation hover effect */
 
 .main-nav a:hover {
     background-color: #f7dce5;
     color: #222;
 }
 
+
+/* =========================================
+   MAIN THREE-COLUMN PAGE LAYOUT
+========================================= */
+
 .content-grid {
     display: grid;
+
     grid-template-columns:
         minmax(150px, 20%)
         minmax(0, 1fr)
         minmax(180px, 22%);
+
     min-height: 600px;
 }
 
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
 .left-sidebar {
-    padding: 30px 20px;
+    padding: 35px 25px;
+
+    background-color: #ffffff;
+
     border-right: 1px solid #ddd;
 }
 
 .left-sidebar h3 {
-    margin-bottom: 15px;
+    font-size: 18px;
+
+    margin-bottom: 18px;
 }
 
 .left-sidebar ul {
@@ -89,113 +161,306 @@ body {
 }
 
 .left-sidebar li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .left-sidebar a {
     text-decoration: none;
+
     color: #333;
+
+    font-weight: 500;
+
+    transition: 0.2s ease;
 }
 
 .left-sidebar a:hover {
     color: #cf7694;
 }
 
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
 .main-content {
-    padding: 30px 35px;
+    padding: 35px;
 }
 
 .main-content h1 {
     font-size: 36px;
+
     margin-bottom: 15px;
+
+    line-height: 1.2;
 }
 
 .main-content h2 {
     font-size: 27px;
-    margin-top: 30px;
-    margin-bottom: 12px;
+
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+    line-height: 1.3;
+}
+
+.main-content h3 {
+    line-height: 1.3;
 }
 
 .main-content p {
     margin-bottom: 16px;
 }
 
-.right-sidebar {
-    padding: 30px 20px;
-    border-left: 1px solid #ddd;
+
+/* Prevent section links from hiding
+   underneath navigation */
+
+.main-content section {
+    scroll-margin-top: 80px;
 }
 
-.sticky-content {
-    position: sticky;
-    top: 20px;
+
+/* =========================================
+   LINKS
+========================================= */
+
+.main-content a,
+.right-sidebar a {
+    color: #b96180;
 }
+
+.main-content a:hover,
+.right-sidebar a:hover {
+    color: #91445f;
+}
+
+
+/* =========================================
+   HERO / PAGE INTRO
+========================================= */
+
+.hero-placeholder {
+    width: 100%;
+
+    min-height: 230px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    background-color: #f4f4f4;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   OPTIONAL HERO IMAGE
+========================================= */
+
+.hero {
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
 
 .card {
+    width: 100%;
+
     background-color: #fafafa;
+
     border: 1px solid #ddd;
     border-radius: 8px;
+
     padding: 20px;
+
     margin-bottom: 20px;
+
     transition: 0.2s ease;
 }
 
+.card h3 {
+    color: #cf7694;
+
+    margin-bottom: 10px;
+}
+
+
+/* Card hover interaction */
+
 .card:hover {
     transform: translateY(-3px);
+
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.card h3 {
-    margin-bottom: 10px;
-    color: #cf7694;
+
+/* Remove unnecessary bottom spacing
+   from last paragraph in cards */
+
+.card p:last-child {
+    margin-bottom: 0;
 }
+
+
+/* =========================================
+   RIGHT SIDEBAR
+========================================= */
+
+.right-sidebar {
+    padding: 35px 25px;
+
+    background-color: #ffffff;
+
+    border-left: 1px solid #ddd;
+}
+
+.right-sidebar h3 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+.right-sidebar p {
+    margin-bottom: 12px;
+}
+
+
+/* Keeps quick information visible
+   while scrolling on desktop */
+
+.sticky-content {
+    position: sticky;
+
+    top: 25px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
 
 .button {
     display: inline-block;
+
     background-color: #cf7694;
-    color: white;
+
+    color: #ffffff !important;
+
     padding: 10px 20px;
+
+    margin-top: 5px;
+
+    border: none;
     border-radius: 6px;
+
     text-decoration: none;
+
+    cursor: pointer;
+
     transition: 0.2s ease;
 }
 
 .button:hover {
     background-color: #b96180;
+
     transform: translateY(-2px);
 }
 
-.hero-placeholder {
-    min-height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
+
+/* =========================================
+   GOOGLE FORM
+========================================= */
 
 .google-form {
     width: 100%;
+
     margin-top: 20px;
+
     overflow: hidden;
+
+    border-radius: 8px;
 }
 
+
+/* Makes the Google Form responsive */
+
 .google-form iframe {
+    display: block;
+
     width: 100%;
+
     max-width: 100%;
-    min-height: 750px;
+
+    min-height: 973px;
+
     border: none;
 }
 
+
+/* =========================================
+   FOOTER
+========================================= */
+
 footer {
-    text-align: center;
-    padding: 20px;
+    width: 100%;
+
+    padding: 20px 30px;
+
+    background-color: #ffffff;
+
     border-top: 1px solid #ddd;
+
+    text-align: center;
+
+    font-size: 14px;
+
     color: #666;
 }
+
+footer a {
+    color: #cf7694;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE DESIGN
+========================================= */
 
 @media (max-width: 1000px) {
 
@@ -203,41 +468,103 @@ footer {
         width: 90%;
     }
 
+
+    /* Changes from 3 columns to 2 */
+
     .content-grid {
         grid-template-columns: 180px 1fr;
     }
 
+
+    /* Moves right sidebar underneath */
+
     .right-sidebar {
         grid-column: 1 / -1;
+
         border-left: none;
+
         border-top: 1px solid #ddd;
     }
+
 
     .sticky-content {
         position: static;
     }
+
+
+    .main-content {
+        padding: 30px;
+    }
+
 }
 
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
 @media (max-width: 700px) {
+
+    body {
+        background-color: #f8dce6;
+    }
+
 
     .site-wrapper {
         width: 96%;
     }
 
+
+    /* Stack all columns */
+
     .content-grid {
         display: block;
     }
 
+
+    /* Header */
+
+    .top-banner {
+        min-height: 110px;
+
+        padding: 25px 15px;
+    }
+
+    .top-banner h1 {
+        font-size: 30px;
+    }
+
+
+    /* Navigation wraps on small screens */
+
     .main-nav {
         flex-wrap: wrap;
-        gap: 10px;
+
+        gap: 8px;
+
+        padding: 12px 10px;
     }
+
+    .main-nav a {
+        font-size: 14px;
+
+        padding: 7px 9px;
+    }
+
+
+    /* Sidebars */
 
     .left-sidebar,
     .right-sidebar {
         border: none;
+
         border-bottom: 1px solid #ddd;
+
+        padding: 25px 20px;
     }
+
+
+    /* Main content */
 
     .main-content {
         padding: 25px 20px;
@@ -246,4 +573,78 @@ footer {
     .main-content h1 {
         font-size: 30px;
     }
+
+    .main-content h2 {
+        font-size: 24px;
+    }
+
+
+    /* Hero */
+
+    .hero-placeholder {
+        min-height: 180px;
+
+        font-size: 24px;
+    }
+
+    .hero img {
+        height: 200px;
+    }
+
+
+    /* Google Form */
+
+    .google-form iframe {
+        width: 100%;
+
+        min-height: 973px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE DEVICES
+========================================= */
+
+@media (max-width: 450px) {
+
+    .site-wrapper {
+        width: 100%;
+
+        border-left: none;
+        border-right: none;
+    }
+
+
+    .main-nav {
+        gap: 4px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+
+        padding: 6px 7px;
+    }
+
+
+    .main-content {
+        padding: 20px 16px;
+    }
+
+
+    .main-content h1 {
+        font-size: 27px;
+    }
+
+
+    .main-content h2 {
+        font-size: 22px;
+    }
+
+
+    .card {
+        padding: 16px;
+    }
+
 }
